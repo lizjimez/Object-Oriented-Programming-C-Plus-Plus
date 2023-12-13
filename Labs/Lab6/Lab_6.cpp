@@ -1,18 +1,20 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab #6
+ * Lizbeth Jimenez #007670332
+ * 1 December 2023
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * Learn how to derive a class base class and understand how member functions and variables can be passed to a derived class. 
  *
- * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
- * the directions of how you PLAN to solve itA}
+ * The most challening was setting up VS and Github on my computer. I spent a few hours trying to fix problems throughout both applications. One of my solutions was to email the Prof
+ * and she quickly solved it. The other I watched the tutorial video for Github.
+ * 
  *
 ***/
 
 #include <iostream>
 #include "Charmander.h"
+#include "Caterpie.h"
 using namespace std;
 
 int main()
@@ -42,5 +44,29 @@ int main()
     cout << "\n------- Print Stats---------\n";
     charlie.printStats();
 
-}
 
+    // Caterpie first = Caterpie();
+    pokemonType.push_back("String Shot");
+
+    cout << "------- Caterpie Constructor Created---------\n";
+    Caterpie WORMMUNCHER = Caterpie("WORMMUNCHER", 45, 35, 30, pokemonType);
+
+    // Caterpie
+    cout << "\n-------Direct Speak---------\n";
+    WORMMUNCHER.speak();
+    
+    // Pokemon pointer to Caterpie
+    Pokemon * p2 = &WORMMUNCHER ;
+    cout << "\n------- Speak called from Pokemon Pointer---------\n";
+    (*p2).speak();
+
+    // Caterpie pointer to Caterpie
+    Caterpie * c2 = &WORMMUNCHER ;
+    cout << "\n------- Speak called from Caterpie Pointer---------\n";
+    (*c2).speak();
+
+    //  Caterpie
+    cout << "\n------- Print Stats---------\n";
+    WORMMUNCHER.printStats();
+
+}
