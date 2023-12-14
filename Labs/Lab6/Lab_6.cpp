@@ -6,8 +6,9 @@
  *
  * Learn how to derive a class base class and understand how member functions and variables can be passed to a derived class. 
  *
- * The most challening was setting up VS and Github on my computer. I spent a few hours trying to fix problems throughout both applications. One of my solutions was to email the Prof
- * and she quickly solved it. The other I watched the tutorial video for Github.
+ * The most challenging part was setting up VS and Github on my computer. I spent a few hours trying to fix problems throughout both applications. One of my solutions was to email the Prof
+ * and she quickly solved it. I watched the tutorial video for Github.
+
  * 
  *
 ***/

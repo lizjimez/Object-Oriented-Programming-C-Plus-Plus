@@ -14,7 +14,7 @@ class Charmander : public Pokemon{
         // --------------- Mutator Functions --------------- 
         void speak()/* override */; 
         void printStats()/*override*/;
-    private:
+    protected:
         vector<string> skills;
 
 };

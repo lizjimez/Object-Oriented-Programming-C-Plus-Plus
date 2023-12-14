@@ -6,7 +6,7 @@
 #include "Pokemon.h"
 using namespace std;
 
-class Charmeleon : public Charmander {
+class Charmeleon : public Charmeleon {
     public:
         // Contructors
         Charmeleon();
